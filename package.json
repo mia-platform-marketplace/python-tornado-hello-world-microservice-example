@@ -1,0 +1,42 @@
+{
+  "name": "@mia-platform/python-test",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://www.mia-platform.eu/",
+  "bugs": {
+    "url": "https://makeitapp.atlassian.net",
+    "email": "core@mia-platform.eu"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Giulio Roggero",
+  "contributors": [
+    "<TO COMPLETE>"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "<TO COMPLETE>"
+  },
+  "scripts": {
+    "checkonly": "exit 0",
+    "coverage": "exit 0",
+    "postcoverage": "exit 0",
+    "lint": "exit 0",
+    "start": "python index.py",
+    "test": "exit 0",
+    "unit": "exit 0",
+    "update-docker-version": "sed -i.bck \"s|version=\\\"[0-9]*\\.[0-9]*\\.[0-9]*.*\\\"|version=\\\"${npm_package_version}\\\"|\" Dockerfile",
+    "version": "npm run update-docker-version && rm -fr Dockerfile.bck && git add Dockerfile"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "./node_modules/@mia-platform/eslint-config-mia/eslintrc.json"
+  }
+}
