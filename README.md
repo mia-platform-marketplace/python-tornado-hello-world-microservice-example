@@ -1,4 +1,4 @@
-# %CUSTOM_PLUGIN_SERVICE_NAME%
+# mia_template_service_name_placeholder
 
 [![pipeline status][pipeline]][git-link]
 [![coverage report][coverage]][git-link]
@@ -22,6 +22,12 @@ curl localhost:3000/cruds/cars/ -d '{ "model": "Panda", "color": "REd" }' -H'con
 curl localhost:3000/log/dfs
 curl localhost:3000/logs/dfs -H'miauser: aaa"
 curl localhost:3000/logs/dfs -H'miauser: aaa' -H'miagroups: www'
+```
+
+or
+
+```bash
+python3 -m pytest
 ```
 
 -------------------------------------------

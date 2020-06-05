@@ -11,3 +11,6 @@ node_modules
 !default.env
 .npmrc
 .scannerwork
+app.pyc
+lastfailed
+__pycache__/
