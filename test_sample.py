@@ -2,7 +2,6 @@ from tornado.testing import AsyncHTTPTestCase
 import app
 import json
 
-
 class TestHelloApp(AsyncHTTPTestCase):
     def get_app(self):
         return app.make_app()
