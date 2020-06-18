@@ -33,7 +33,7 @@ curl <YOUR_PROJECT_HOST>/tornado-greetings/hello
 you should see the following message:
 
 ```json
-[object Object]
+{"message": "Hello World"}
 ```
 
 Congratulations! You have successfully learnt how to use our Python Tornado _Hello World_ Example on the DevOps Console!
